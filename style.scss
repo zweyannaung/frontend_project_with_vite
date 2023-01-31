@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;800&display=swap');
+@import './node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
+$font-family-base :'Montserrat', sans-serif;
+$navbar-nav-link-padding-x:2rem;
+$primary : #067b28;
+$btn-border-radius: .75rem;
+$btn-border-radius-sm: .80rem;
+
+@import './node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.nav-link{
+    color: $primary;
+    font-weight: bold;
+}
+.opacity{
+    opacity: .95;
+}
+p{
+    text-align: justify;
+}
+.cc{
+    text-align: center;
+    font-size: 13px;
+}
+.active{
+    border-bottom: 2px solid $primary;
+    font-weight:1000;
+}
+.img-one{
+    transition: .8s;
+}
+nav:hover {
+    .img-one{
+        transform: rotate(360deg);
+        transition-delay: .5s;
+    }
+}
+
+.card{
+    transition: .5s;
+}
+.card:hover{
+    transform: scale(1.2);
+}
+// nav{
+//     transition-delay: .5s ease-out;
+// }
+// .to-dowm{
+//     margin-top: -80px;
+//     background-color: #067b28;
+// }
+// // @media(max-width:767px){
+// //   body{
+//         width: device-width;
+// // }
+
